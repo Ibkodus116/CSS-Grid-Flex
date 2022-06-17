@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: rgb(182, 182, 239);
+}
+.wrapper{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ff7978;
+    background-image: url(bg.png);
+}
+.container{
+    margin: 120px auto;
+    display: flex;
+    height: 600px;
+    text-align: left;
+}
+.space{
+    margin: auto;
+    flex-grow: 1;
+    width: 100%;
+}
+.one{
+    padding-left: 35px;
+    color: #ffff;
+    margin-left: 20px;
+}
+p{
+    font-size: 18px;
+}
+h1{
+    margin-right: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size:40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+.two{
+    padding-right: 35px;
+    /* margin-top: 25px; */
+}
+.form{
+    background: white;
+    border-radius: 5px ;
+    padding: 35px;
+    /* margin: 30px;  */
+    text-align: center;
+    height: 330px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.399);
+}
+input{
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.225);
+    border-radius: 8px;
+    width: 350px;
+    height: 40px;
+    margin: 10px 0;
+}
+.agreement{
+    font-size: 11px;
+}
+.button{
+    background-color: #37cc8a;
+    color: #ffff;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px 0px #34645886;
+    border: 0;
+}
+.promo{
+    /* border: 3px solid blue; */
+    
+    margin-bottom: 12px;
+    background: #5d54a3;
+    color: #ffff;
+    border-radius: 9px;
+    text-align: center;
+    padding: 13px 0;
+    box-shadow: 0px 5px 5px 0px #4241496e;
+}
+a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+}
+.button:hover{
+    background: #88d0b0cf;
+}
+
+@media (max-width: 800px){
+    
+    /* body{ */
+        /* background-image: url(mobile.png); */
+        /* background-repeat: repeat-x; */
+    /* } */
+    .wrapper{
+        width: 100%;
+        max-width: 300px;
+        height: 1000px;
+        background: #ff7978;   
+        background-image: url(mobile.png);
+        /* margin: 0 auto; */
+    }
+    .container{
+        flex-direction: column;    
+        width: 90%; 
+        margin-top: 0;
+        padding-top: 100px;   
+    }
+    .one{
+        margin: 0 ;
+        padding: 0;
+        text-align: center;
+        
+    }
+    h1{
+        font-size: 25px;
+        margin: 0;
+        margin-bottom: 20px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .tips{
+        margin-bottom: 40px;
+        font-size:13px;
+        line-height: 25px;
+        font-weight: bold;
+    }
+    .promo{
+        font-size: small;
+        padding: 20px 30px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    input{
+        width: 100%;
+        font-weight: bold;
+        margin-top: 0;
+        padding-left: 18px;
+        font-size: 12px;
+    }
+    .agreement{
+        font-size: 10px;
+        margin: 10px 0;
+        line-height: 18px;
+    }
+    .form{
+        height: 300px;
+    }
+    .button{
+        padding-left: 18px;
+        text-align: center;
+        width: 222px; 
+    }
+
+}
